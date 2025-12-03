@@ -2,7 +2,7 @@ Algoritmo "OlaMundo"
 // -------------------------------------------------
 // Algoritmo para escrever olá, mundo.
 //
-// AUTOR: Jean Lucas de O. Straub
+// AUTOR: Jean Lucas
 // Curso de Algoritmos da Plataforma Curso em Vídeo.
 // Professor: Gustavo Guanabara
 // -------------------------------------------------
