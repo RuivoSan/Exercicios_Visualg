@@ -7,7 +7,7 @@ Algoritmo "numeroAnteriorePosterior"
 // Professor: Gustavo Guanabara
 // -------------------------------------------------
 Var
-   num:inteiro
+   rDir,rEsq,num,mais,menos:inteiro
 Procedimento Nome()
 inicio
    limpatela
@@ -16,25 +16,34 @@ inicio
    Escreval("---------------------------")
 fimprocedimento
 
-procedimento olhoEsquerdo(var ante:inteiro)
+funcao olhoEsquerdo(a,b:inteiro):inteiro
+var
+   menosUm:inteiro
 inicio
-   ante <- num - 1
-   Escreval("O número anterior de ",num," é ", ante)
-fimprocedimento
+   menosUm <- num - menos
+   retorne menosUm
+fimfuncao
 
-procedimento olhoDireito(var suce:inteiro)
+funcao olhoDireito(a,b:inteiro):inteiro
+var
+   maisUm:inteiro
 inicio
-   suce <- num + 2
-   Escreval("O número posterior de ",(num+1)," é ", suce)
-fimprocedimento
+   maisUm <- num + mais
+   retorne maisUm
+fimfuncao
 
 Inicio
+   mais <- 1
+   menos <- 1
    Nome()
    Escreva("Digite seu número: ")
    leia(num)
 
-   olhoEsquerdo(num)
-   olhoDireito(num)
+   rEsq <- olhoEsquerdo(num,menos)
+   rDir <- olhoDireito(num,mais)
    
+   Nome()
+   Escreval("O número anterior a ",num," é ",rEsq)
+   Escreva("O número posterior a ",num," é ",rDir)
 
 Fimalgoritmo
