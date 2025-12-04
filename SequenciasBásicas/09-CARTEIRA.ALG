@@ -1,7 +1,7 @@
 algoritmo "carteira"
 // -------------------------------------------------
 // Algoritmo para dizer quantos dolares pode comprar
-//
+// com a quantia da carteira
 //
 // AUTOR: Jean Lucas
 // Curso de Algoritmos da Plataforma Curso em Vídeo.
@@ -30,12 +30,12 @@ fimfuncao
 inicio
    precodolar <- 5.30
    telaNome()
-   Escreva("Digite a quantia em reais: ")
+   Escreva("Digite a quantia presente na carteira: ")
    leia(quant)
    
    rdolar <- reaisDolar(quant,precodolar)
    telaNome()
-   
-   Escreva("Você pode comprar US$",rdolar:4:1,".")
+   Escreval("Carteira: R$",quant:4:2)
+   Escreva("Você pode comprar US$",rdolar:4:1)
    
 fimalgoritmo
