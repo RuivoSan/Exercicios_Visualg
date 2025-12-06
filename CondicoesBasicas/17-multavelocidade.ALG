@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "multavelocidade"
 // -------------------------------------------------
 // Algoritmo para multar dependendo de cada km acima
 // da velocidade máxima - 80Km/h
