@@ -8,9 +8,11 @@ algoritmo "anobissexto"
 // Professor: Gustavo Guanabara
 // -------------------------------------------------
 var
+   r:caracter
    ano:inteiro
 inicio
-
+   repita
+   limpatela
    Escreval("Digite um ano e descubra se ele é bissexto ou não")
    
    repita
@@ -22,8 +24,12 @@ inicio
    ate (ano > 0)
    
    Se (ano % 4 = 0) e (ano % 100 <> 0) ou (ano % 400 = 0) entao
-      Escreva("O ano ",ano ," é bissexto")
+      Escreval("O ano ",ano ," é bissexto")
    senao
-      Escreva("O ano ",ano ," não é bissexto")
+      Escreval("O ano ",ano ," não é bissexto")
    fimse
+   
+   Escreva("Deseja continuar? S/N: ")
+   leia(r)
+   ate (r = "N")
 fimalgoritmo
