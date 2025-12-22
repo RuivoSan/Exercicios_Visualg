@@ -17,7 +17,7 @@ var
    aum,sal,novosal,anos9:real
 inicio
    anos10 <- 20
-   anos9 <- 125 / 10
+   anos9 <- 12.5
    anos3 <- 3
    Escreva("Digite seu nome: ")
    leia(nome)
