@@ -11,7 +11,27 @@ algoritmo "rra"
 // Professor: Gustavo Guanabara
 // -------------------------------------------------
 var
-
+   media, nota1, nota2:real
+   aluno:caracter
 inicio
+   Escreva("Digite seu nome: ")
+   Leia(aluno)
+   Escreva("Digite a primeira nota: ")
+   leia(nota1)
+   Escreva("Digite a segunda nota: ")
+   leia(nota2)
 
+   media <- (nota1 + nota2) / 2
+   escreval
+   EscrevaL("resultado do aluno ",aluno,":")
+   se (media >= 7) entao
+      EscrevaL("Aprovado!")
+   senao
+      se (media > 5) entao
+         Escreval("Recuperação!")
+      senao
+         Escreva("Reprovado")
+      fimse
+   fimse
+   
 fimalgoritmo
